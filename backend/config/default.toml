@@ -1,0 +1,21 @@
+# OxPrint Configuration
+# SECURITY NOTE: Never commit sensitive values (secrets, passwords) to this file
+# Use environment variables for sensitive data: JWT_SECRET, DATABASE_URL
+
+[database]
+max_connections = 5
+
+[server]
+host = "127.0.0.1"
+port = 8080
+static_dir = "static"
+
+[files]
+upload_dir = "uploads"
+max_file_size = 104857600 # 100MB
+allowed_extensions = ["gcode"]
+
+[printer]
+default_baud_rate = 115200
+connection_timeout = 10
+command_timeout = 5

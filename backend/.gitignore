@@ -1,2 +1,15 @@
-/target
+# Environment variables (contains secrets)
 .env
+.env.local
+
+# Database
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Build artifacts
+target/
+
+# Uploads
+uploads/
